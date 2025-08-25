@@ -27,7 +27,7 @@ body{
 
 
 header {
-    display: felx;
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
@@ -77,13 +77,21 @@ header ul a{
     margin: 0 10px;
 }
 
-.icons {
+header ul a:hover{
+    color: black;
+}
+
+.link-icons {
     display: flex;
     gap: 40px;
+     list-style: none; 
+     
     
 }
 
-.icons a{
+
+
+.link-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,17 +99,35 @@ header ul a{
     width: 30px;
     height: 30px;
     border: 2px solid #727fde;
-    text-decoration: lightgrey;
+    color: lightgrey;  
     border-radius: 50%;
-    transform: 0.3s;
+    transition: 0.3s;
 }
 
-.icons a:hover{
+
+.link-icons a:hover{
     background-color: #727fde;
     color: black;
-    box-shadow: 0 0 15px #3e4368;
+    box-shadow: 0 0 15px #727fde6f;
 
 }
+
+
+.placeholder-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+
+.placeholder-box video {
+    width: 100%;
+    margin-top: 0;
+    
+}
+
+
 
 @media (max-aspect-ratio: 16/9) {
     .back-vid{
